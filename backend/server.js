@@ -467,6 +467,8 @@ mongoose.connection.on('disconnected', () => {
 app.get('/', (req, res) => {
   res.status(200).send('Backend is running 🚀');
 });
+app.get('/favicon.ico', (req, res) => res.status(204).end());
+
 
 app.head('/', (req, res) => {
   res.status(200).end();
